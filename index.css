@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Rubik:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+#mobilel-head{
+    width: 100vw;
+}
+#springs-div{
+    height: 39px;
+    width: 100vw;
+    background-color: #11346F;
+}
+#springsPTag{
+    position: relative;
+    top:20%;
+    color: white;
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 30px;
+}
+#mainTopDiv{
+    background: #F5FDFF;
+}
+#magicMassage{
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+hr{
+    height: 2px;
+    background-color: rgb(212, 207, 207);
+    border: none;
+}
+
