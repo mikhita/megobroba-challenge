@@ -65,13 +65,18 @@ hr{
     color: #11346F;
     width: 60%;
     text-align: left;
-    padding-left: 17px;
     
+}
+#allInOneText{
+    display: flex;
+    flex-direction: row;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 #magicSpan{
     width: 50%;
     font-family: "Mont";
-    font-size: 35px;
+    font-size: 26px;
     font-weight: 900;
     line-height: 30px;
     letter-spacing: 0em;
@@ -84,12 +89,12 @@ hr{
     align-items: center;
     padding-left: 17px;
     position: relative;
-    bottom: 35px;
+    bottom: 25px;
 }
 #lineSpinner{
     position: relative;
     /* transform: rotate(-40deg); */
-    left: 5%;
+    /* left: 5%; */
     bottom: 10px;
 }
 #allInOneAndImage{
@@ -99,8 +104,8 @@ hr{
     height: 107px;
     width: 174px;
     position: relative;
-    bottom: 70px;
-    left: 5%;
+    /* bottom: 70px;
+    left: 5%; */
 }
 #shadow1{
     position: relative;
@@ -120,5 +125,128 @@ hr{
     line-height: 22px;
     text-align: center;
     color: #262626;
-    
+    position: relative;
+    bottom: 25px;
+}
+#differentKindOfMassage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#differentKindOfMassage p{
+    margin-top: 5px;
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #11346F;
+}
+#threeButtonsDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 21px;
+}
+#getMesNow{
+    height: 63px;
+    background: #197AFF;
+    border-radius: 60px;
+    color: white;
+    border: none;
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    width: 100%;
+}
+
+#bundlesEach{
+    width: 60%;
+    align-self: center;
+    height: 34px;
+    border: none;
+    background: rgba(77, 145, 207, 0.15);
+    box-shadow: 0px 0px 14px #FFFFFF;
+    border-radius: 30px;
+    margin-top: 16px;
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+}
+#bundlesEach span{
+    color: #197AFF;
+    font-weight: 500;
+    font-size: 14px;
+}
+#debraImg{
+    width: 64px;
+}
+#debraCommentDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 15px;
+    height: 81px;
+    background: rgba(234, 242, 255, 0.1);
+    border: 1px solid rgba(174, 204, 255, 0.5);
+    border-radius: 110px;
+    margin-top: 16px;
+}
+#starDebVerDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 115%;
+}
+#verBuyerDiv{
+    display: flex;
+    flex-direction: row;
+}
+#debraCom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    position: relative;
+    right: 40px;
+}
+#debraComText{
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    text-align: left;
+}
+#debraName{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    color: #787979;
+}
+#verBuyerText{
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    color: #197AFF;
+
 }
