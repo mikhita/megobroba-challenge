@@ -278,3 +278,50 @@ hr{
 #shippingToRaveMainDiv div{
     width: 35%;
 }
+#cardThree{
+    background: linear-gradient(180deg, #FFFFFF 0%, #D7E6FF 100%);
+    border: 1.5px solid #197AFF;
+    border-radius: 18px;
+    margin-top: 58px;
+    height: 120px;
+}
+
+#threeMachArr{
+    position: relative;
+    z-index: 0;
+    left: 215px;
+    top: 11px;
+
+}
+#threeMachImg{
+    position: relative;
+    z-index: 1;
+    right: 10%;
+    bottom: 27px;
+}
+#mainCardDiv{
+    background: linear-gradient(118.72deg, #AECCFF -18.14%, #197AFF 165.34%);
+    padding-top: 19px;
+    padding-left: 18px;
+    padding-right: 18px;
+    
+}
+#buyAndSaveTextDiv p{
+    font-family: Mont;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #11346F;
+    
+}
+#buyAndSaveTextDiv span{
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    color: white;
+}
+
