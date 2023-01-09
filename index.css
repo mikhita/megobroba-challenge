@@ -1,11 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Rubik:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Khula:wght@900&display=swap');
+@font-face {
+    font-family: 'Mont';
+    src: url('/fonts/Mont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mont';
+    src: url('/fonts/Mont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'Mont';
+    src: url('/fonts/Mont-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
+    font-family: 'Mont', sans-serif;
     text-align: center;
 }
 #mobilel-head{
@@ -42,7 +60,7 @@ hr{
     font-family: 'Mont';
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 30px;
     color: #11346F;
     width: 60%;
@@ -52,7 +70,7 @@ hr{
 }
 #magicSpan{
     width: 50%;
-    font-family: "Khula";
+    font-family: "Mont";
     font-size: 35px;
     font-weight: 900;
     line-height: 30px;
@@ -93,4 +111,14 @@ hr{
     position: relative;
     left: 10%;
     bottom: 10px;
+}
+#magicMasProvText{
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #262626;
+    
 }
