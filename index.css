@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilroy:wght@600;700;800&display=swap');
 @font-face {
     font-family: 'Mont';
     src: url('/fonts/Mont-Regular.ttf') format('truetype');
@@ -283,7 +284,7 @@ hr{
     border: 1.5px solid #197AFF;
     border-radius: 18px;
     margin-top: 58px;
-    height: 120px;
+    border: none;
 }
 
 #threeMachArr{
@@ -324,4 +325,60 @@ hr{
     line-height: 39px;
     color: white;
 }
-
+#mostPopul{
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #57AC73;
+    border-radius: 50px;
+    height: 28px;
+    border: none;
+    width: 128px;
+}
+#buyGetOneFree{
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #11346F;
+    margin-top: 11px;
+}
+#buyGetOneFree span{
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color:#197AFF;
+}
+#pricingDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 20px;
+}
+#pricingDiv p{
+    font-family: Gilroy;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #11346F;
+}
+#pricingDiv span{
+    font-family: Gilroy;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #93A2BB;
+    text-decoration: line-through;
+}
