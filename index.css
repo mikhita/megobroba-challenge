@@ -206,6 +206,7 @@ hr{
     border-radius: 110px;
     margin-top: 16px;
     margin-bottom: 26px;
+    width: 393px;
 }
 #starDebVerDiv{
     display: flex;
@@ -279,33 +280,46 @@ hr{
 #shippingToRaveMainDiv div{
     width: 35%;
 }
-#cardThree{
+#cardThree, #cardFive, #cardOne{
     background: linear-gradient(180deg, #FFFFFF 0%, #D7E6FF 100%);
     border: 1.5px solid #197AFF;
     border-radius: 18px;
     margin-top: 58px;
     border: none;
+    padding-bottom: 23px;
+    width: 378px;
+}
+#cardOne{
+    padding-top: 23px;
 }
 
-#threeMachArr{
+#threeMachArr, .threeMachArr{
     position: relative;
     z-index: 0;
     left: 215px;
     top: 11px;
 
 }
-#threeMachImg{
+#threeMachImg, .threeMachImg{
     position: relative;
     z-index: 1;
     right: 10%;
     bottom: 27px;
+}
+.threeMachImg{
+    width: 241px;
+    height: 99px;
 }
 #mainCardDiv{
     background: linear-gradient(118.72deg, #AECCFF -18.14%, #197AFF 165.34%);
     padding-top: 19px;
     padding-left: 18px;
     padding-right: 18px;
-    
+    padding-bottom: 63px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 #buyAndSaveTextDiv p{
     font-family: Mont;
@@ -325,7 +339,7 @@ hr{
     line-height: 39px;
     color: white;
 }
-#mostPopul{
+#mostPopul, .mostPopul{
     font-family: 'Mont';
     font-style: normal;
     font-weight: 700;
@@ -339,7 +353,11 @@ hr{
     border: none;
     width: 128px;
 }
-#buyGetOneFree{
+.mostPopul{
+    background: #AC5780;
+    width: 100px;
+}
+#buyGetOneFree, .buyGetOneFree{
     font-family: Gilroy;
     font-size: 24px;
     font-weight: 600;
@@ -348,7 +366,7 @@ hr{
     color: #11346F;
     margin-top: 11px;
 }
-#buyGetOneFree span{
+#buyGetOneFree span, .getOne{
     font-family: Gilroy;
     font-size: 24px;
     font-weight: 800;
@@ -356,14 +374,14 @@ hr{
     letter-spacing: 0em;
     color:#197AFF;
 }
-#pricingDiv{
+.pricingDiv{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 22px;
-    margin-top: 20px;
+    margin-top: 9px;
 }
-#pricingDiv p{
+.pricingDiv p{
     font-family: Gilroy;
     font-size: 25px;
     font-weight: 800;
@@ -372,7 +390,7 @@ hr{
     text-align: center;
     color: #11346F;
 }
-#pricingDiv span{
+.pricingDiv span{
     font-family: Gilroy;
     font-size: 25px;
     font-weight: 700;
@@ -382,3 +400,254 @@ hr{
     color: #93A2BB;
     text-decoration: line-through;
 }
+.freeInstalAndAfterpayDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+.freeInstalAndAfterpayDiv p{
+    font-family: "Mont";
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0em;
+}
+.freeInstalAndAfterpayDiv img{
+   position: relative;
+   left: 16px;
+
+}
+.freeInstalAndAfterpayDiv span{
+    font-family: "Mont";
+    font-size: 11px;
+    font-weight: 900;
+    line-height: 15px;
+    letter-spacing: 0em;
+}
+.btn-container{
+    width: 342px;  
+    cursor: pointer;
+}
+
+
+label {
+    font-size: 13px;
+    color: #424242;
+    font-weight: 500;
+}
+
+.btn-color-mode-switch{
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner{
+    margin: 0px;
+    width: 342px;
+    height: 36px;
+    background: #fff;
+    border-radius: 26px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    display: block;
+    cursor: pointer;
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
+    content: attr(data-on);
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    top: 11px;
+    right: 20px;
+
+}
+
+.btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
+    content: attr(data-off);
+    width: 171px;
+    height: 5px;
+    background: #99D298;
+    border-radius: 26px;
+    position: absolute;
+    left: 0px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 6px -2px #111;
+    padding: 10px 5px 20px 5px;
+}
+
+
+.btn-color-mode-switch input[type="checkbox"]{
+    cursor: pointer;
+    width: 50px;
+    height: 36px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+}
+.btn-color-mode-switch input[type="radio"]{
+    cursor: pointer;
+    width: 50px;
+    height: 36px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
+    content: attr(data-on);
+    left: 171px;
+    background: #99D298;
+}
+.btn-color-mode-switch input[type="radio"]:checked + label.btn-color-mode-switch-inner:after{
+    content: attr(data-on);
+    left: 171px;
+    background: #99D298;
+}
+
+.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
+    content: attr(data-off);
+    right: auto;
+    left: 20px;
+}
+.btn-color-mode-switch input[type="radio"]:checked + label.btn-color-mode-switch-inner:before{
+    content: attr(data-off);
+    right: auto;
+    left: 20px;
+}
+
+
+[data-on]{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #11346F;
+    
+}
+[data-off]{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #11346F;
+}
+#specMainDiv, .specMainDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+.centerPayment{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+#specialPriceDiv, .specialPriceDiv{
+    border: 1px solid #AECCFF;
+    border-radius: 19px;
+    width: 342px;
+    height: 77px;
+    
+}
+.sixOrdersDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 8px;
+    gap: 10px;
+}
+.sixOrdersDiv p{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #11346F;
+}
+.getYourMagButton{
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #197AFF;
+    box-shadow: 0px 7px 14px rgba(25, 122, 255, 0.5);
+    border-radius: 60px;
+    border: none;
+    height: 48px;
+    width: 353px;
+    margin-top: 21px;
+}
+.payment{
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+} 
+#switchContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 342px;
+    background: #F0F6FF;
+    border: none;
+    border-radius: 80px;
+    height: 36px;
+}
+#switchContainer p{
+    width: 50%;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    cursor: pointer;
+
+}
+.backGreen{
+    padding-top: 10px;
+    background: #BFF5BE;
+    border-radius: 48px;
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+.middle-skratch{
+    position: relative;
+    left: 44px;
+    bottom: 8px;
+}
+
+  
+  
+  
+
+  
+
+  
