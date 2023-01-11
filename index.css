@@ -2,38 +2,32 @@
     font-family: 'Mont';
     src: url('/fonts/Mont-Regular.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
 }
 @font-face {
     font-family: 'Mont';
     src: url('/fonts/Mont-Regular.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
   }
   
 @font-face {
     font-family: 'Mont';
     src: url('/fonts/Mont-Bold.ttf') format('truetype');
     font-weight: bold;
-    font-style: normal;
   }
   @font-face {
     font-family: 'Gilroy';
     src: url('/fonts/Gilroy-Regular.ttf') format('truetype');
     font-weight: normal;
-    font-style: normal;
 }
 @font-face {
     font-family: 'Gilroy';
     src: url('/fonts/Gilroy-Medium.ttf') format('truetype');
     font-weight: 500;
-    font-style: normal;
 }
 @font-face {
     font-family: 'Gilroy';
     src: url('/fonts/Gilroy-Bold.ttf') format('truetype');
     font-weight: bold;
-    font-style: normal;
 }
 @font-face {
     font-family: 'Gilroy';
@@ -53,6 +47,26 @@ body{
     overflow-x: hidden;
     position: relative;
 }
+.flexRowOnly{
+    display: flex;
+    flex-direction: row;
+}
+.flexColumnOnly{
+    display: flex;
+    flex-direction: column;
+}
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #mobilel-head{
     width: 100vw;
 }
@@ -66,7 +80,6 @@ body{
     top:20%;
     color: white;
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 800;
     font-size: 14px;
     line-height: 30px;
@@ -85,7 +98,6 @@ hr{
 }
 #allInOneText p{
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 30px;
@@ -95,8 +107,6 @@ hr{
     
 }
 #allInOneText{
-    display: flex;
-    flex-direction: row;
     padding-left: 17px;
     padding-right: 17px;
 }
@@ -120,8 +130,6 @@ hr{
 }
 #lineSpinner{
     position: relative;
-    /* transform: rotate(-40deg); */
-    /* left: 5%; */
     bottom: 10px;
 }
 #allInOneAndImage{
@@ -131,8 +139,6 @@ hr{
     height: 107px;
     width: 174px;
     position: relative;
-    /* bottom: 70px;
-    left: 5%; */
 }
 #shadow1{
     position: relative;
@@ -146,7 +152,6 @@ hr{
 }
 #magicMasProvText{
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
@@ -156,15 +161,12 @@ hr{
     bottom: 25px;
 }
 #differentKindOfMassage{
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 #differentKindOfMassage p{
     margin-top: 5px;
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
@@ -181,12 +183,12 @@ hr{
 }
 #getMesNow{
     height: 63px;
+    max-width: 408px;
     background: #197AFF;
     border-radius: 60px;
     color: white;
     border: none;
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 800;
     font-size: 16px;
     line-height: 21px;
@@ -196,6 +198,7 @@ hr{
 
 #bundlesEach{
     width: 60%;
+    max-width: 255px;
     align-self: center;
     height: 34px;
     border: none;
@@ -204,7 +207,6 @@ hr{
     border-radius: 30px;
     margin-top: 16px;
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 14px;
@@ -220,8 +222,6 @@ hr{
     width: 64px;
 }
 #debraCommentDiv{
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-left: 10px;
@@ -235,14 +235,10 @@ hr{
     width: 393px;
 }
 #starDebVerDiv{
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 115%;
 }
 #verBuyerDiv{
-    display: flex;
-    flex-direction: row;
     align-items: center;
 }
 #verBuyerDiv p{
@@ -259,7 +255,6 @@ hr{
 }
 #debraComText{
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 17px;
@@ -268,7 +263,6 @@ hr{
 }
 #debraName{
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 17px;
@@ -276,7 +270,6 @@ hr{
 }
 #verBuyerText{
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 800;
     font-size: 11px;
     line-height: 15px;
@@ -289,14 +282,11 @@ hr{
 }
 #shippingToRaveMainDiv{
     height: 101px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     background: #11346F;
     backdrop-filter: blur(2px);
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 800;
     font-size: 12px;
     line-height: 18px;
@@ -348,7 +338,7 @@ hr{
     align-items: center;
 }
 #buyAndSaveTextDiv p{
-    font-family: Mont;
+    font-family: "Mont";
     font-size: 30px;
     font-weight: 900;
     line-height: 39px;
@@ -359,7 +349,6 @@ hr{
 }
 #buyAndSaveTextDiv span{
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 39px;
@@ -367,7 +356,6 @@ hr{
 }
 #mostPopul, .mostPopul{
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
@@ -384,7 +372,7 @@ hr{
     width: 100px;
 }
 #buyGetOneFree, .buyGetOneFree{
-    font-family: Gilroy;
+    font-family: "Gilroy";
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
@@ -393,7 +381,7 @@ hr{
     margin-top: 11px;
 }
 #buyGetOneFree span, .getOne{
-    font-family: Gilroy;
+    font-family: "Gilroy";
     font-size: 24px;
     font-weight: 800;
     line-height: 30px;
@@ -401,14 +389,12 @@ hr{
     color:#197AFF;
 }
 .pricingDiv{
-    display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 22px;
     margin-top: 9px;
 }
 .pricingDiv p{
-    font-family: Gilroy;
+    font-family: "Gilroy";
     font-size: 25px;
     font-weight: 800;
     line-height: 31px;
@@ -417,7 +403,7 @@ hr{
     color: #11346F;
 }
 .pricingDiv span{
-    font-family: Gilroy;
+    font-family: "Gilroy";
     font-size: 25px;
     font-weight: 700;
     line-height: 31px;
@@ -427,8 +413,6 @@ hr{
     text-decoration: line-through;
 }
 .freeInstalAndAfterpayDiv{
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-top: 16px;
@@ -556,7 +540,6 @@ label {
 
 [data-on]{
     font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
@@ -565,7 +548,6 @@ label {
 }
 [data-off]{
     font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
@@ -589,17 +571,12 @@ label {
     
 }
 .sixOrdersDiv{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     position: relative;
     top: 8px;
     gap: 10px;
 }
 .sixOrdersDiv p{
     font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 15px;
@@ -607,7 +584,6 @@ label {
 }
 .getYourMagButton{
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 24px;
@@ -630,10 +606,6 @@ label {
 
 } 
 #switchContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     width: 342px;
     background: #F0F6FF;
     border: none;
@@ -643,7 +615,7 @@ label {
 #switchContainer p{
     width: 50%;
     text-align: center;
-    font-family: Gilroy;
+    font-family: "Gilroy";
     font-size: 12px;
     font-weight: 700;
     line-height: 15px;
@@ -700,8 +672,6 @@ label {
     text-align: center;
 }
 #totalRevAndWriteRevDiv{
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 95%;
@@ -723,7 +693,6 @@ label {
     border: 1px solid #213786;
     border-radius: 5px;
     font-family: 'Gilroy';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
@@ -733,10 +702,6 @@ label {
     width: 133px;
 }
 #sliderDiv{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 13px;
     margin-top: 17px;
     overflow: hidden;
@@ -747,15 +712,12 @@ label {
 }
 .meganText{
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 800;
     font-size: 14px;
     line-height: 19px;
     color: #11346F;
 }
 .iLoveVerify{
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items:flex-start;
     margin-top: 30px;
@@ -765,8 +727,6 @@ label {
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
 .verif{
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 9px;
@@ -775,7 +735,6 @@ label {
 }
 .verif p{
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 800;
     font-size: 11px;
     line-height: 15px;
@@ -797,7 +756,6 @@ label {
 .sliderText{
     width: 250px;
     font-family: 'Mont';
-    font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 26px;
@@ -811,9 +769,10 @@ label {
 }
 
 .dots {
-width: 100%;
-display: flex;
-justify-content: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
 }
 
 .dot {
@@ -828,13 +787,102 @@ transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-background-color: #717171;
+background-color: blue;
 }
   
 .hidden{
     display: none;
 }
-  
+.show{
+    display: block;
+}
+footer{
+    padding: 26px 22px 24px 18px;
+    background: #11346F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footerTitle{
+    font-family: 'Mont';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#footerTitle span{
+    font-family: "Gilroy";
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.footerImg{
+    margin-top: 39px;
+    border-radius: 10px;
+}
+.questions{
+    gap:10px;
+    margin-top: 24px;
+}
+.questionOne{
+    padding: 10px 27px 5px 14px;
+    border: 1px solid #31548E;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: flex;
+    width: 375px;
+}
+.question{
+    display: flex;
+    align-items: center;
+    height: 59px;
+}
+.question p{
+    font-family: 'Mont';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.hrAndAnswer hr{
+    width: 113%;
+    position: relative;
+    right: 15px;
+    height: 1px;
+}
+.hrAndAnswer p{
+    font-family: 'Mont';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    width: 105%;
+    position: relative;
+    top: 15px;
+    color: #AECCFF;
+}
+.hrAndAnswer{
+    display: none;
+    height: 72px;
+}
+.faq{
+    font-family: 'Mont';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F6F8FC;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+.faq img{
+    transform: rotate(180deg);
+}
 
   
 
