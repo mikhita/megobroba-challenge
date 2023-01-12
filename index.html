@@ -21,10 +21,10 @@
             </div>
             <button class="ordButton">ORDER NOW</button>
         </div>
-        <hr />
+        <hr id="hrId"/>
         <div id="allInOneAndImage">
             <div id="allInOneText" class="flexRowOnly">
-                <p>All-in-one massager <br> that works like <span id="magicSpan">magic!</span> </p>
+                <p>All-in-one massager that works like <span id="magicSpan">magic!</span> </p>
                 <div id="twoMachines">
                     <img src="./assets/two-machines-mobile.png" alt="">
                     <img id="shadow1" src="./assets/სტოცკა 4.png" alt="">
@@ -35,24 +35,53 @@
         <div id="springAndScratDiv">
             <img id="scratchImage" src="./assets/skratch-line-blue.svg" alt="">
             <img id="lineSpinner" src="./assets/line-spinner.png" alt="">
+            <img id="spinnerTwo" src="./assets/spinner2.png" alt="">
         </div>
         <p id="magicMasProvText">MagicMassage provides relief from head tensions, <br> muscle aches, sleep irregularities and more!</p>
+        <p id="masProvTextLarge">MagicMassage™ provides relief from head tensions, muscle aches, sleep irregularities and more - suitable for adults, kids, and pets!</p>
         <div id="differentKindOfMassage" class="flexRowOnly">
+            <div class="hrAndFourDivs">
             <div id="headMas">
-                <img src="./assets/massage-mobile.svg" alt="">
-                <p>Head <br> Massage</p>
+                    <img src="./assets/massage-mobile.svg" alt="">
+                    <p>Head <br> Massage</p>
+                    <ul class="flexColumn largeUl">
+                        <li>Reduce stress & anxiety</li>
+                        <li>Strengthen hair roots</li>
+                    </ul>
+                </div>
+                <hr>
             </div>
-            <div id="BodyMas">
-                <img src="./assets/muscles-mobile.svg" alt="">
-                <p>Body <br> Massage</p>
+            <div class="hrAndFourDivs">
+                <div id="BodyMas">
+                    <img src="./assets/muscles-mobile.svg" alt="">
+                    <p>Body <br> Massage</p>
+                    <ul class="flexColumn largeUl">
+                        <li> Perfect muscle recovery</li>
+                        <li> Improved circulation</li>
+                    </ul>
+                </div>
+                <hr>
             </div>
-            <div id="kidMas">
-                <img src="./assets/kid-mas.svg" alt="">
-                <p>Kid <br> Massage</p>
-            </div>
+            <div class="hrAndFourDivs" id="kidM">
+                <div id="kidMas">
+                    <img src="./assets/kid-mas.svg" alt="">
+                    <p>Kid <br> Massage</p>
+                    <ul class="flexColumn largeUl">
+                        <li>Promote growth</li>
+                        <li>Ehanced sleep quality</li>
+                    </ul>
+                </div>
+                </div>
+                <hr id="hrPet">
+            <div class="hrAndFourDivs">
             <div id="petMas">
-                <img src="./assets/dog-mobile.svg" alt="">
+                <img src="./assets/dogBlueNose.svg" alt="">
                 <p>Pet <br> Massage</p>
+                <ul class="flexColumn largeUl">
+                    <li>Boosted immunity</li>
+                    <li>Lifetime of comfort</li>
+                </ul>
+            </div>
             </div>
         </div>
         <div id="threeButtonsDiv">
@@ -93,6 +122,7 @@
         </div>
         <div id="raveDiv">
             <img src="./assets/rave-rewievs.svg" alt="">
+            <img id="blustar" src="./assets/blueStar.png" alt="">
             <p>RAVE REVIEWS FROM OUR CUSTOMERS</p>
         </div>
     </div>
@@ -101,112 +131,114 @@
             <p> Buy More & Save More! <br> <span>Limited-Time Offer</span> </p>
             <img src="./assets/skratcWhite.png" alt="">
         </div>
-        <div id="cardThree">
-            <div id="machineandArrow">
-                <img id="threeMachArr" src="./assets/spinner2.png" alt="">
-                <img id="threeMachImg" src="./assets/most-popular-machines.png" alt="">
-            </div>
-            <button id="mostPopul">MOST POPULAR</button>
-            <p id="buyGetOneFree">Buy 2 + <span id="getOne">Get 1 Free</span></p>
-            <img class="middle-skratch" src="./assets/middle-skratch.png" alt="">
-            <div class="pricingDiv flexRowOnly">
-                <p>$139.90</p>
-                <span>$209.85</span>
-            </div>
-            <div class="freeInstalAndAfterpayDiv flexRowOnly">
-                <p>or 4 interest-free installments of <span>$34.99</span>by</p>
-                <img src="./assets/afterpay.png" alt="">
-            </div>
-            <div id="specMainDiv">
-                <div id="specialPriceDiv">
-                    <div class="btn-container">
-                            <label class="switch btn-color-mode-switch">
-                                <input type="checkbox" name="color_mode" id="color_mode" value="1">
-                                <label for="color_mode" data-on="Special online price!" data-off="SAVE $70 - 33% OFF!" class="btn-color-mode-switch-inner"></label>    
-                            </label>
-                    </div>
-                    <div class="sixOrdersDiv flexRow">
-                        <img src="./assets/6orders.svg" alt="">
-                        <p>6 orders at this price remaining</p>
+        <div id="bigWrapperDiv" >
+            <div id="cardThree">
+                <div id="machineandArrow">
+                    <img id="threeMachArr" src="./assets/spinner2.png" alt="">
+                    <img id="threeMachImg" src="./assets/most-popular-machines.png" alt="">
+                </div>
+                <button id="mostPopul">MOST POPULAR</button>
+                <p id="buyGetOneFree">Buy 2 + <span id="getOne">Get 1 Free</span></p>
+                <img class="middle-skratch" src="./assets/middle-skratch.png" alt="">
+                <div class="pricingDiv flexRowOnly">
+                    <p>$139.90</p>
+                    <span>$209.85</span>
+                </div>
+                <div class="freeInstalAndAfterpayDiv flexRowOnly">
+                    <p>or 4 interest-free installments of <span>$34.99</span>by</p>
+                    <img src="./assets/afterpay.png" alt="">
+                </div>
+                <div id="specMainDiv">
+                    <div id="specialPriceDiv">
+                        <div class="btn-container">
+                                <label class="switch btn-color-mode-switch">
+                                    <input type="checkbox" name="color_mode" id="color_mode" value="1">
+                                    <label for="color_mode" data-on="Special online price!" data-off="SAVE $70 - 33% OFF!" class="btn-color-mode-switch-inner"></label>    
+                                </label>
+                        </div>
+                        <div class="sixOrdersDiv flexRow">
+                            <img src="./assets/6orders.svg" alt="">
+                            <p>6 orders at this price remaining</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <button class="getYourMagButton">GET YOUR MAGIC</button>
-            <div class="centerPayment">
-                <div class="payment">
-                    <img src="./assets/amex.png" alt="">
-                    <img src="./assets/applepay.png" alt="">
-                    <img src="./assets/gpay.png" alt="">
-                    <img src="./assets/maestro.png" alt="">
-                    <img src="./assets/mastercard.png" alt="">
-                    <img src="./assets/paypal.png" alt="">
-                    <img src="./assets/visa.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div id="cardFive">
-            <div class="machineandArrow">
-                <img class="threeMachArr" src="./assets/spinner2.png" alt="">
-                <img class="threeMachImg" src="./assets/5-machine.png" alt="">
-            </div>
-            <button class="mostPopul">Best value</button>
-            <p class="buyGetOneFree">Buy 3 + <span class="getOne">Get 2 Free</span></p>
-            <img class="middle-skratch" src="./assets/middle-skratch.png" alt="">
-            <div class="pricingDiv flexRowOnly">
-                <p>$209.85</p>
-                <span>$349.95</span>
-            </div>
-            <div class="freeInstalAndAfterpayDiv flexRowOnly">
-                <p>or 4 interest-free installments of <span>$34.99</span>by</p>
-                <img src="./assets/afterpay.png" alt="">
-            </div>
-            <div class="specMainDiv">
-                <div class="specialPriceDiv">
-                    <div id="switchContainer" class="flexRow">
-                        <p id="left" class="backGreen" onclick="changeLeft()">SAVE $140 - 40% OFF!</p>
-                        <p id="right" onclick="changeRight()">Special online price!</p>
-                    </div>
-                    <div class="sixOrdersDiv flexRow">
-                        <img src="./assets/6orders.svg" alt="">
-                        <p>6 orders at this price remaining</p>
+                <button class="getYourMagButton">GET YOUR MAGIC</button>
+                <div class="centerPayment">
+                    <div class="payment">
+                        <img src="./assets/amex.png" alt="">
+                        <img src="./assets/applepay.png" alt="">
+                        <img src="./assets/gpay.png" alt="">
+                        <img src="./assets/maestro.png" alt="">
+                        <img src="./assets/mastercard.png" alt="">
+                        <img src="./assets/paypal.png" alt="">
+                        <img src="./assets/visa.png" alt="">
                     </div>
                 </div>
             </div>
-            <button class="getYourMagButton">GET YOUR MAGIC</button>
-            <div class="centerPayment">
-                <div class="payment">
-                    <img src="./assets/amex.png" alt="">
-                    <img src="./assets/applepay.png" alt="">
-                    <img src="./assets/gpay.png" alt="">
-                    <img src="./assets/maestro.png" alt="">
-                    <img src="./assets/mastercard.png" alt="">
-                    <img src="./assets/paypal.png" alt="">
-                    <img src="./assets/visa.png" alt="">
+            <div id="cardFive">
+                <div class="machineandArrow">
+                    <img class="threeMachArr" src="./assets/spinner2.png" alt="">
+                    <img class="threeMachImg" src="./assets/5-machine.png" alt="">
+                </div>
+                <button class="mostPopul">Best value</button>
+                <p class="buyGetOneFree">Buy 3 + <span class="getOne">Get 2 Free</span></p>
+                <img class="middle-skratch" src="./assets/middle-skratch.png" alt="">
+                <div class="pricingDiv flexRowOnly">
+                    <p>$209.85</p>
+                    <span>$349.95</span>
+                </div>
+                <div class="freeInstalAndAfterpayDiv flexRowOnly">
+                    <p>or 4 interest-free installments of <span>$34.99</span>by</p>
+                    <img src="./assets/afterpay.png" alt="">
+                </div>
+                <div class="specMainDiv">
+                    <div class="specialPriceDiv">
+                        <div id="switchContainer" class="flexRow">
+                            <p id="left" class="backGreen" onclick="changeLeft()">SAVE $140 - 40% OFF!</p>
+                            <p id="right" onclick="changeRight()">Special online price!</p>
+                        </div>
+                        <div class="sixOrdersDiv flexRow">
+                            <img src="./assets/6orders.svg" alt="">
+                            <p>6 orders at this price remaining</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="getYourMagButton">GET YOUR MAGIC</button>
+                <div class="centerPayment">
+                    <div class="payment">
+                        <img src="./assets/amex.png" alt="">
+                        <img src="./assets/applepay.png" alt="">
+                        <img src="./assets/gpay.png" alt="">
+                        <img src="./assets/maestro.png" alt="">
+                        <img src="./assets/mastercard.png" alt="">
+                        <img src="./assets/paypal.png" alt="">
+                        <img src="./assets/visa.png" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="cardOne">
-            <div class="machineandArrow">
-                <img class="oneMachImg" src="./assets/1machine.png" alt="">
-            </div>
-            <p class="buyGetOneFree">Buy MagicMassage</p>
-            <div class="pricingDiv">
-                <p>$69.95</p>
-            </div>
-            <div class="freeInstalAndAfterpayDiv flexRowOnly">
-                <p>or 4 interest-free installments of <span>$34.99</span>by</p>
-                <img src="./assets/afterpay.png" alt="">
-            </div>
-            <button class="getYourMagButton">GET YOUR MAGIC</button>
-            <div class="centerPayment">
-                <div class="payment">
-                    <img src="./assets/amex.png" alt="">
-                    <img src="./assets/applepay.png" alt="">
-                    <img src="./assets/gpay.png" alt="">
-                    <img src="./assets/maestro.png" alt="">
-                    <img src="./assets/mastercard.png" alt="">
-                    <img src="./assets/paypal.png" alt="">
-                    <img src="./assets/visa.png" alt="">
+            <div id="cardOne">
+                <div class="machineandArrow">
+                    <img class="oneMachImg" src="./assets/1machine.png" alt="">
+                </div>
+                <p class="buyGetOneFree">Buy MagicMassage</p>
+                <div class="pricingDiv">
+                    <p>$69.95</p>
+                </div>
+                <div class="freeInstalAndAfterpayDiv flexRowOnly">
+                    <p>or 4 interest-free installments of <span>$34.99</span>by</p>
+                    <img src="./assets/afterpay.png" alt="">
+                </div>
+                <button class="getYourMagButton">GET YOUR MAGIC</button>
+                <div class="centerPayment">
+                    <div class="payment">
+                        <img src="./assets/amex.png" alt="">
+                        <img src="./assets/applepay.png" alt="">
+                        <img src="./assets/gpay.png" alt="">
+                        <img src="./assets/maestro.png" alt="">
+                        <img src="./assets/mastercard.png" alt="">
+                        <img src="./assets/paypal.png" alt="">
+                        <img src="./assets/visa.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
