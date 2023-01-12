@@ -37,3 +37,29 @@ function slideItem(n) {
     slider.style.transform = "translate(-60%, 0%)";
   }
 }
+
+const saveThertythree = document.getElementById("saveThertythree");
+const specialOnes = document.getElementById("specialOnes");
+
+const saveForty = document.getElementById("saveForty");
+const specialTwo = document.getElementById("specialTwo");
+
+saveThertythree.addEventListener("click", function () {
+  specialOnes.classList.remove("active");
+  this.classList.add("active");
+});
+
+specialOnes.addEventListener("click", function () {
+  saveThertythree.classList.remove("active");
+  this.classList.add("active");
+});
+
+saveForty.addEventListener("click", function () {
+  specialTwo.classList.remove("active");
+  this.classList.add("active");
+});
+
+specialTwo.addEventListener("click", function () {
+  saveForty.classList.remove("active");
+  this.classList.add("active");
+});

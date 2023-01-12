@@ -299,7 +299,7 @@ hr{
     width: 35%;
 }
 #cardThree, #cardFive, #cardOne{
-    background: linear-gradient(180deg, #FFFFFF 0%, #D7E6FF 100%);
+    background-color: #F6F8FC;
     border: 1.5px solid #197AFF;
     border-radius: 18px;
     margin-top: 58px;
@@ -307,6 +307,10 @@ hr{
     padding-bottom: 23px;
     width: 378px;
 }
+#cardThree{
+    background: linear-gradient(180deg, #FFFFFF 0%, #D7E6FF 100%) !important;
+}
+
 #cardOne{
     padding-top: 23px;
 }
@@ -617,11 +621,7 @@ label {
 #switchContainer p{
     width: 50%;
     text-align: center;
-    font-family: "Gilroy";
     font-size: 12px;
-    font-weight: 700;
-    line-height: 15px;
-    letter-spacing: 0em;
     cursor: pointer;
 
 }
@@ -792,7 +792,7 @@ transition: background-color 0.6s ease;
 background-color: blue;
 }
   
-.hidden, .headDivFunctional, .ordButton, #spinnerTwo, #masProvTextLarge, #differentKindOfMassage hr, .largeUl{
+.hidden, .headDivFunctional, .ordButton, #spinnerTwo, #masProvTextLarge, #differentKindOfMassage hr, .largeUl, #buyGetOneFreeOk, #freeShipSpan{
     display: none;
 }
 .show{
@@ -884,13 +884,46 @@ footer{
 .faq img{
     transform: rotate(180deg);
 }
+.pricing-button-container {
+    width: 339px; /* set the width of the container */
+    height: 36px; /* set the height of the container */
+    position: relative; /* set the container to be positioned relative to its parent */
+    background-color: white;
+    border-radius: 48px;
+  }
+  
+  .button-section {
+    position: absolute; /* position the sections relative to the container */
+    top: 0; /* align the top of the sections with the top of the container */
+    bottom: 0; /* align the bottom of the sections with the bottom of the container */
+    width: 50%; /* make the sections take up half the width of the container */
+    text-align: center; /* center the text in the sections */
+    line-height: 40px; /* center the text vertically within the sections */
+    background-color: white; /* set the default background color of the sections */
+    transition: background-color 0.6s ease;
+    border-radius: 48px;
+  }
+  
+  .left {
+    left: 0; /* align the left section with the left side of the container */
+  }
+  
+  .right {
+    right: 0; /* align the right section with the right side of the container */
+  }
+  
+  /* Add a class for the active section */
+  .active {
+    background-color: #BFF5BE; /* change the background color of the active section */
+  }
+  
 @media only screen and (min-width: 600px){
     #mobilel-head{
         display: none;
     }
 }
 @media only screen and (min-width: 1400px){
-    #shadow1, #shadow2, #twoMachines, #lineSpinner, #magicMasProvText{
+    #shadow1, #shadow2, #twoMachines, #lineSpinner, #magicMasProvText, .buyGetOneFree{
         display: none;
     }
     #mainTopDiv{
@@ -996,8 +1029,6 @@ footer{
         background-color: #CEE2FF;
         position: relative;
         left: 7px;
-        /* top: 7px; */
-        
     }
     .largeUl{
         display: flex;
@@ -1071,7 +1102,7 @@ footer{
     #cardFive{
         order: -1 !important;
     }
-    #bigWraperDiv{
+    #bigWrapperDiv{
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
@@ -1090,6 +1121,47 @@ footer{
     .threeMachArr, #threeMachArr{
         top: 40px;
     }
+    #buyGetOneFreeOk{
+        display: block;
+        font-size: 28px;
+        line-height: 37px;
+    }
+    #freeShipSpan{
+        display: block;
+        text-decoration: none;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #11346F;
+    }
+    .pricingDiv p{
+        font-size: 32px;
+        line-height: 43px;
+    }
+    .thertyDMB{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        gap: 10px;
+    }
+    .thertyDMB p{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #11346F;
+    }
+    #oneMIFAfterpay{
+        margin-top: 40px;
+        margin-bottom: 33px;
+    }
+    #buyGetOneFreeFive{
+        display: block;
+    }
+    
 
 }
   
