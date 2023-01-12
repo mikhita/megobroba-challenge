@@ -76,13 +76,13 @@ body{
     background-color: #11346F;
 }
 #springsPTag{
-    position: relative;
-    top:20%;
     color: white;
     font-family: 'Mont';
     font-weight: 800;
     font-size: 14px;
     line-height: 30px;
+    width: 313px;
+    gap: 10px;
 }
 #mainTopDiv{
     background: #F5FDFF;
@@ -790,7 +790,7 @@ transition: background-color 0.6s ease;
 background-color: blue;
 }
   
-.hidden{
+.hidden, .headDivFunctional, .ordButton{
     display: none;
 }
 .show{
@@ -849,9 +849,8 @@ footer{
     color: #FFFFFF;
 }
 .hrAndAnswer hr{
-    width: 113%;
-    position: relative;
-    right: 15px;
+    margin-left: -14px;
+    margin-right: -27px;
     height: 1px;
 }
 .hrAndAnswer p{
@@ -883,7 +882,63 @@ footer{
 .faq img{
     transform: rotate(180deg);
 }
-
+@media only screen and (min-width: 600px){
+    #mobilel-head{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1400px){
+    #shadow1, #shadow2{
+        display: none;
+    }
+    #mainTopDiv{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    #mainTopDiv hr{
+        margin-left: -100px;
+        margin-right: -100px;
+    }
+    .headDivFunctional{
+        display: flex;
+        flex-direction: row;
+        width: 515px;
+        height: 21px;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Mont';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #11346F;
+    }
+    .headDivFunctional p:hover{
+        cursor: pointer;
+        font-weight: 700;
+    }
+    .magicMassageHeader{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .ordButton{
+        font-family: 'Mont';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #197AFF;
+        border-radius: 60px;
+        width: 165px;
+        height: 42px;
+        display: block;
+        border: none;
+    }
+}
   
 
   
