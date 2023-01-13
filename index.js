@@ -5,7 +5,7 @@ let questions = document.querySelectorAll(".question");
 let hrAndAnswers = document.querySelectorAll(".hrAndAnswer");
 let arrowOpenClose = document.querySelectorAll(".arrowOpenClose");
 let faq = document.querySelector(".faq");
-console.log(Boolean(arrowOpenClose[1].style.transform === "rotate(180deg)"));
+
 for (let i = 0; i < elements.length; i++) {
   elements[i].onclick = function () {
     let answer = this.parentElement.nextSibling.nextSibling;
@@ -43,14 +43,14 @@ for (let i = 0; i < hrAndAnswers.length; i++) {
   };
 }
 
-for (let i = 0; i < span.length; i++) {
-  span[i].onclick = function () {
-    for (let j = 0; j < span.length; j++) {
-      span[j].style.background = "#CBCED6";
-    }
-    this.style.background = "blue";
-  };
-}
+// for (let i = 0; i < span.length; i++) {
+//   span[i].onclick = function () {
+//     for (let j = 0; j < span.length; j++) {
+//       span[j].style.background = "#CBCED6";
+//     }
+//     this.style.background = "blue";
+//   };
+// }
 
 faq.addEventListener("click", function () {
   if (
