@@ -3,8 +3,9 @@ let span = document.querySelectorAll(".dot");
 let elements = document.querySelectorAll(".arrowOpenClose");
 let questions = document.querySelectorAll(".question");
 let hrAndAnswers = document.querySelectorAll(".hrAndAnswer");
+let arrowOpenClose = document.querySelectorAll(".arrowOpenClose");
 let faq = document.querySelector(".faq");
-
+console.log(Boolean(arrowOpenClose[1].style.transform === "rotate(180deg)"));
 for (let i = 0; i < elements.length; i++) {
   elements[i].onclick = function () {
     let answer = this.parentElement.nextSibling.nextSibling;
@@ -59,10 +60,16 @@ faq.addEventListener("click", function () {
     for (let i = 0; i < hrAndAnswers.length; i++) {
       hrAndAnswers[i].style.display = "block";
     }
+    for (let i = 0; i < arrowOpenClose.length; i++) {
+      arrowOpenClose[i].style.transform = "rotate(180deg)";
+    }
     faq.childNodes[3].style.transform = "rotate(0deg)";
   } else {
     for (let i = 0; i < hrAndAnswers.length; i++) {
       hrAndAnswers[i].style.display = "none";
+    }
+    for (let i = 0; i < arrowOpenClose.length; i++) {
+      arrowOpenClose[i].style.transform = "rotate(0deg)";
     }
     faq.childNodes[3].style.transform = "rotate(180deg)";
   }
