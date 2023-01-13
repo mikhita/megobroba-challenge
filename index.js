@@ -1,5 +1,5 @@
 let slider = document.getElementById("sliderDiv");
-let span = document.querySelectorAll(".dot");
+let spans = document.querySelectorAll(".dot");
 let elements = document.querySelectorAll(".arrowOpenClose");
 let questions = document.querySelectorAll(".question");
 let hrAndAnswers = document.querySelectorAll(".hrAndAnswer");
@@ -44,12 +44,13 @@ for (let i = 0; i < hrAndAnswers.length; i++) {
 }
 
 // for (let i = 0; i < span.length; i++) {
-//   span[i].onclick = function () {
-//     for (let j = 0; j < span.length; j++) {
-//       span[j].style.background = "#CBCED6";
-//     }
-//     this.style.background = "blue";
-//   };
+function changeBackgrounColor(span) {
+  console.log(span);
+  for (let i = 0; i < spans.length; i++) {
+    spans[i].style.background = "#CBCED6";
+  }
+  span.style.background = "blue";
+}
 // }
 
 faq.addEventListener("click", function () {
