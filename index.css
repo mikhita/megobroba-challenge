@@ -131,6 +131,7 @@ hr{
     padding-left: 17px;
     position: relative;
     bottom: 25px;
+    right: 113px;
 }
 #lineSpinner{
     position: relative;
@@ -889,7 +890,7 @@ footer{
         width: 171px;
     }
     #springAndScratDiv{
-        left: 617px;
+        left: 749px;
     }
     #spinnerTwo{
         display: block;
