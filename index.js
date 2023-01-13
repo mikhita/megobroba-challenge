@@ -1,5 +1,3 @@
-let leftPrice = document.getElementById("left");
-let rightPrice = document.getElementById("right");
 let slider = document.getElementById("sliderDiv");
 let span = document.querySelector("dot");
 let elements = document.querySelectorAll(".arrowOpenClose");
@@ -19,15 +17,6 @@ for (let i = 0; i < elements.length; i++) {
   };
 }
 
-function changeLeft() {
-  leftPrice.classList.add("backGreen");
-  rightPrice.classList.remove("backGreen");
-}
-function changeRight() {
-  leftPrice.classList.remove("backGreen");
-  rightPrice.classList.add("backGreen");
-}
-
 function slideItem(n) {
   if (n === 1) {
     slider.style.transform = "translate(0px, 0px)";
@@ -44,8 +33,12 @@ const specialOnes = document.getElementById("specialOnes");
 const saveForty = document.getElementById("saveForty");
 const specialTwo = document.getElementById("specialTwo");
 
+const specialOnesLarge = document.getElementById("specialOnesLarge");
+const specialTwoLarge = document.getElementById("specialTwoLarge");
+
 saveThertythree.addEventListener("click", function () {
   specialOnes.classList.remove("active");
+  specialOnesLarge.classList.remove("active");
   this.classList.add("active");
 });
 
@@ -54,12 +47,23 @@ specialOnes.addEventListener("click", function () {
   this.classList.add("active");
 });
 
+specialOnesLarge.addEventListener("click", function () {
+  saveThertythree.classList.remove("active");
+  this.classList.add("active");
+});
+
 saveForty.addEventListener("click", function () {
   specialTwo.classList.remove("active");
+  specialTwoLarge.classList.remove("active");
   this.classList.add("active");
 });
 
 specialTwo.addEventListener("click", function () {
+  saveForty.classList.remove("active");
+  this.classList.add("active");
+});
+
+specialTwoLarge.addEventListener("click", function () {
   saveForty.classList.remove("active");
   this.classList.add("active");
 });

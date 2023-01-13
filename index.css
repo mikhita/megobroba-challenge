@@ -446,119 +446,6 @@ hr{
     width: 342px;  
     cursor: pointer;
 }
-
-
-label {
-    font-size: 13px;
-    color: #424242;
-    font-weight: 500;
-}
-
-.btn-color-mode-switch{
-    display: inline-block;
-    margin: 0px;
-    position: relative;
-    cursor: pointer;
-    
-}
-
-.btn-color-mode-switch > label.btn-color-mode-switch-inner{
-    margin: 0px;
-    width: 342px;
-    height: 36px;
-    background: #fff;
-    border-radius: 26px;
-    overflow: hidden;
-    position: relative;
-    transition: all 0.3s ease;
-    display: block;
-    cursor: pointer;
-}
-
-.btn-color-mode-switch > label.btn-color-mode-switch-inner:before{
-    content: attr(data-on);
-    position: absolute;
-    font-size: 12px;
-    font-weight: 500;
-    top: 11px;
-    right: 20px;
-
-}
-
-.btn-color-mode-switch > label.btn-color-mode-switch-inner:after{
-    content: attr(data-off);
-    width: 171px;
-    height: 5px;
-    background: #99D298;
-    border-radius: 26px;
-    position: absolute;
-    left: 0px;
-    text-align: center;
-    transition: all 0.3s ease;
-    box-shadow: 0px 0px 6px -2px #111;
-    padding: 10px 5px 20px 5px;
-}
-
-
-.btn-color-mode-switch input[type="checkbox"]{
-    cursor: pointer;
-    width: 50px;
-    height: 36px;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    margin: 0px;
-}
-.btn-color-mode-switch input[type="radio"]{
-    cursor: pointer;
-    width: 50px;
-    height: 36px;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    margin: 0px;
-}
-
-.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after{
-    content: attr(data-on);
-    left: 171px;
-    background: #99D298;
-}
-.btn-color-mode-switch input[type="radio"]:checked + label.btn-color-mode-switch-inner:after{
-    content: attr(data-on);
-    left: 171px;
-    background: #99D298;
-}
-
-.btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before{
-    content: attr(data-off);
-    right: auto;
-    left: 20px;
-}
-.btn-color-mode-switch input[type="radio"]:checked + label.btn-color-mode-switch-inner:before{
-    content: attr(data-off);
-    right: auto;
-    left: 20px;
-}
-
-
-[data-on]{
-    font-family: 'Gilroy';
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    color: #11346F;
-    
-}
-[data-off]{
-    font-family: 'Gilroy';
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    color: #11346F;
-}
 #specMainDiv, .specMainDiv{
     display: flex;
     justify-content: center;
@@ -611,33 +498,6 @@ label {
     align-items: center;
 
 } 
-#switchContainer{
-    width: 342px;
-    background: #F0F6FF;
-    border: none;
-    border-radius: 80px;
-    height: 36px;
-}
-#switchContainer p{
-    width: 50%;
-    text-align: center;
-    font-size: 12px;
-    cursor: pointer;
-
-}
-.backGreen{
-    padding-top: 10px;
-    background: #BFF5BE;
-    border-radius: 48px;
-    font-family: Gilroy;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 15px;
-    letter-spacing: 0em;
-    text-align: left;
-    height: 100%;
-    transition: all 0.3s ease;
-}
 .middle-skratch{
     position: relative;
     left: 44px;
@@ -763,7 +623,6 @@ label {
     line-height: 26px;
     text-align: left;
     color: #262626;
-    margin-top: 19px;
 }
 .heightOneSicNine{
     height: 169px;
@@ -792,7 +651,7 @@ transition: background-color 0.6s ease;
 background-color: blue;
 }
   
-.hidden, .headDivFunctional, .ordButton, #spinnerTwo, #masProvTextLarge, #differentKindOfMassage hr, .largeUl, #buyGetOneFreeOk, #freeShipSpan{
+.hidden, .headDivFunctional, .ordButton, #spinnerTwo, #masProvTextLarge, #differentKindOfMassage hr, .largeUl, #buyGetOneFreeOk, #freeShipSpan, .large{
     display: none;
 }
 .show{
@@ -854,6 +713,7 @@ footer{
     margin-left: -14px;
     margin-right: -27px;
     height: 1px;
+    background-color: #31548E;
 }
 .hrAndAnswer p{
     font-family: 'Mont';
@@ -885,36 +745,45 @@ footer{
     transform: rotate(180deg);
 }
 .pricing-button-container {
-    width: 339px; /* set the width of the container */
-    height: 36px; /* set the height of the container */
-    position: relative; /* set the container to be positioned relative to its parent */
+    width: 340px; 
+    height: 36px; 
+    position: relative; 
     background-color: white;
     border-radius: 48px;
   }
   
   .button-section {
-    position: absolute; /* position the sections relative to the container */
-    top: 0; /* align the top of the sections with the top of the container */
-    bottom: 0; /* align the bottom of the sections with the bottom of the container */
-    width: 50%; /* make the sections take up half the width of the container */
-    text-align: center; /* center the text in the sections */
-    line-height: 40px; /* center the text vertically within the sections */
-    background-color: white; /* set the default background color of the sections */
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    width: 50%; 
+    text-align: center;
+    line-height: 40px; 
+    background-color: white; 
     transition: background-color 0.6s ease;
     border-radius: 48px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #11346F;
+    cursor: pointer;
   }
   
   .left {
-    left: 0; /* align the left section with the left side of the container */
+    left: 0; 
   }
   
   .right {
-    right: 0; /* align the right section with the right side of the container */
+    right: 0; 
   }
-  
-  /* Add a class for the active section */
   .active {
-    background-color: #BFF5BE; /* change the background color of the active section */
+    background-color: #BFF5BE; 
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: #11346F;
   }
   
 @media only screen and (min-width: 600px){
@@ -923,7 +792,7 @@ footer{
     }
 }
 @media only screen and (min-width: 1400px){
-    #shadow1, #shadow2, #twoMachines, #lineSpinner, #magicMasProvText, .buyGetOneFree{
+    #shadow1, #shadow2, #twoMachines, #lineSpinner, #magicMasProvText, .buyGetOneFree, #specialOnes, .dots, #cardThreeTime, #sliderSecondTextP, .footerImg{
         display: none;
     }
     #mainTopDiv{
@@ -1161,8 +1030,101 @@ footer{
     #buyGetOneFreeFive{
         display: block;
     }
-    
-
+    .pricing-button-container{
+        height: 43px;
+    }
+    .freeShipPlus{
+        display: block;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #11346F;
+        position: relative;
+        right: 50px;
+    }
+    #specialOnesLarge, #specialTwoLarge{
+        display: block;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 13px;
+        gap: 10px;
+    }
+    #saveThertythree, #saveForty{
+        width: 40%;
+    }
+    .freeInstalAndAfterpayDiv p{
+        font-size: 12px;
+    }
+    #priceSixtyNine{
+        margin-top: 27px;
+    }
+    #preFooter{
+        align-items: center
+    }
+    #preFooHeadDiv p {
+        width: 100%;
+        font-size: 37px;
+    }
+    #preFooHeadDiv p span{
+        font-weight: 700;
+        font-size: 37px;
+    }
+    #preFooHeadDiv img{
+        position: relative;
+        width: 226px;
+        left: 239px;
+    }
+    #sliderDiv{
+        gap: 30px;
+    }
+    #cardNumFour{
+        display: flex;
+    }
+    #totalRevAndWriteRevDiv{
+        padding-left: 80px;
+        padding-right: 77px;
+    }
+    #sliderSecondTextPTwo{
+        display: block;
+        line-height: 26px;
+    }
+    .imgAndFooterWrapper{
+        display: flex;
+        gap: 84px;
+        align-items: flex-start;
+        margin-top: 52px;
+    }
+    .large{
+        display: block;
+    }
+    .questionOne{
+        width: 652px;
+    }
+    .questions{
+        margin-top: 0%;
+    }
+    .question{
+        height: 44px;
+        justify-content: space-between;
+        width: 97%;
+    }
+    .faq{
+        position: relative;
+        left: 15px;
+        bottom: 41px;
+    }
+    .hrAndAnswer{
+        width: 97%;
+        height: 68px;
+    }
+    .hrAndAnswer hr{
+        margin-left: -23px;
+        margin-right: -38px;
+    }
 }
   
 
