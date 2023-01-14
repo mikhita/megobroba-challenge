@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Mont';
+    src: url('/fonts/Mont-Heavy.ttf') format('ttf');
+    font-weight: bold;
+    font-style: bold;
+}
   
 @font-face {
     font-family: 'Mont';
@@ -716,7 +722,7 @@ footer{
 .question p{
     font-family: 'Mont';
     font-weight: 700;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 22px;
     text-align: left;
     color: #FFFFFF;
@@ -875,7 +881,7 @@ footer{
         cursor: pointer;
     }
     #allInOneText p, #magicSpan{
-        font-size: 42px;
+        font-size: 49px;
         line-height: 55px;
 
     }

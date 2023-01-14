@@ -10,11 +10,11 @@ for (let i = 0; i < elements.length; i++) {
   elements[i].onclick = function () {
     let answer = this.parentElement.nextSibling.nextSibling;
     if (answer.style.display === "" || answer.style.display === "none") {
-      e.stopPropagation();
+      stopPropagation();
       this.style.transform = "rotate(180deg)";
       answer.style.display = "block";
     } else {
-      e.stopPropagation();
+      stopPropagation();
       this.style.transform = "rotate(0)";
       answer.style.display = "none";
     }
