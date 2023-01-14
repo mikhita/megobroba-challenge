@@ -5,6 +5,9 @@ let questions = document.querySelectorAll(".question");
 let hrAndAnswers = document.querySelectorAll(".hrAndAnswer");
 let arrowOpenClose = document.querySelectorAll(".arrowOpenClose");
 let faq = document.querySelector(".faq");
+let headerTitles = document.querySelectorAll(".headerTitle");
+
+console.log(headerTitles);
 
 for (let i = 0; i < elements.length; i++) {
   elements[i].onclick = function () {
@@ -43,14 +46,21 @@ for (let i = 0; i < hrAndAnswers.length; i++) {
   };
 }
 
-// for (let i = 0; i < span.length; i++) {
+function changeBackgrounColorTitle(span) {
+  for (let i = 0; i < headerTitles.length; i++) {
+    headerTitles[i].style.fontSize = "17px";
+    headerTitles[i].style.opacity = "0.75";
+  }
+  span.style.fontSize = "20px";
+  span.style.opacity = "1";
+}
+
 function changeBackgrounColor(span) {
   for (let i = 0; i < spans.length; i++) {
     spans[i].style.background = "#CBCED6";
   }
   span.style.background = "blue";
 }
-// }
 
 faq.addEventListener("click", function () {
   if (
