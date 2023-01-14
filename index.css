@@ -1,40 +1,35 @@
 @font-face {
     font-family: 'Mont';
-    src: url('/fonts/Mont-Regular.ttf') format('truetype');
+    src: url('/fonts/Mont-Regular.ttf') format('ttf');
     font-weight: normal;
+    font-style: normal;
 }
-@font-face {
-    font-family: 'Mont';
-    src: url('/fonts/Mont-Regular.ttf') format('truetype');
-    font-weight: normal;
-  }
   
 @font-face {
     font-family: 'Mont';
-    src: url('/fonts/Mont-Bold.ttf') format('truetype');
+    src: url('/fonts/Mont-Bold.ttf') format('ttf');
     font-weight: bold;
+    font-style: bold;
   }
   @font-face {
     font-family: 'Gilroy';
-    src: url('/fonts/Gilroy-Regular.ttf') format('truetype');
+    src: url('/fonts/Gilroy-Regular.ttf') format('ttf');
     font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'Gilroy';
-    src: url('/fonts/Gilroy-Medium.ttf') format('truetype');
-    font-weight: 500;
+    src: url('/fonts/Gilroy-Medium.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'Gilroy';
-    src: url('/fonts/Gilroy-Bold.ttf') format('truetype');
+    src: url('/fonts/Gilroy-Bold.ttf') format('ttf');
     font-weight: bold;
+    font-style: bold;
 }
-@font-face {
-    font-family: 'Gilroy';
-    src: url('/fonts/Gilroy-Italic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -815,6 +810,11 @@ footer{
     }
     #totalRevAndWriteRevDiv{
         width: 70%;
+    }
+}
+@media only screen and (min-width: 800px){
+    .dots{
+        display: none;
     }
 }
 @media only screen and (min-width: 1400px){

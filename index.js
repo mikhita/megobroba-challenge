@@ -45,7 +45,6 @@ for (let i = 0; i < hrAndAnswers.length; i++) {
 
 // for (let i = 0; i < span.length; i++) {
 function changeBackgrounColor(span) {
-  console.log(span);
   for (let i = 0; i < spans.length; i++) {
     spans[i].style.background = "#CBCED6";
   }
